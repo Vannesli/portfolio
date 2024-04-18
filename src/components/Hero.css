@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=News+Cycle:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+.hero-section{
+    background-color: #242424;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container-hero{
+    background-color: black;
+    width: 100%;
+    padding-bottom:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-brand {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#242424;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding:10px 20px 10px 20px;
+    border-radius:5px;
+    user-select: none;
+    padding-left: 50px;
+}
+.name:hover{
+    cursor: pointer;
+}
+.name > img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    
+}
+.name > img:hover{
+    width: 500px;
+}
+.icon-vari{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container-display{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+#container-display > img{
+    object-fit: cover;
+}
+#container-display > p {
+    height: fit-content;
+    width: fit-content;
+    font-family: "Poppins", sans-serif;
+}
+
+.display1 {
+    margin-top:20px;
+    margin-left:20px;
+    width: 40%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.display2 {
+    
+    margin-left:20px;
+    width: 40%;
+    height: 200px;
+    position: absolute;
+    top: calc(100% - 250px);
+    left: 0;
+    background-color: black;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.display3 {
+    margin-top: 20px;
+    margin-right:20px;
+    width: 40%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.display4 {
+    
+    margin-right:20px;
+    width: 40%;
+    height: 200px;
+    position: absolute;
+    top: calc(100% - 250px);
+    right: 0;
+    background-color: black;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.container-vari{
+    width:50%;
+    display: flex;
+    justify-content:center;
+    gap: 200px;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: blue; */
+}
+.container-vari::selection{
+    background-color: yellow;
+}
+.text-cloud{
+    
+    color: white;
+    font-family: "Poppins", sans-serif;
+    
+}
+.text-cloud::selection{
+    background-color: yellow;
+    color:black;
+}
+.text-cloud > br::selection{
+    background-color: yellow;
+}
+.assistant{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 50%;
+    margin-top:100px;
+}
+.assistant:hover{
+    opacity: 100%;
+    font-size: larger;
+    cursor: pointer;
+}
+.teks-vari{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+}
+.teks-vari::selection{
+    background-color: yellow;
+    color:black;
+}

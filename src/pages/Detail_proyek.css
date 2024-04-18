@@ -1,0 +1,133 @@
+.hero-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.image-hero-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.image-hero-detail > img{
+    width: 95%;
+}
+
+
+.row-hero-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    /* background-color: red; */
+    gap:20%;
+    margin-top:50px;
+}
+.name-detail{
+    width:20%;
+}
+.proyek-name{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.proyek-about{
+    /* background-color: red; */
+    width: 100%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+
+
+.column-detail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.row-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+    width: 100%;
+}
+.column-detail-role{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: blue; */
+}
+.row-detail-role{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: start;
+}
+.column-row-detail-role, .column-row-detail-collab, .column-row-detail-duration, .column-row-detail-tools{
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+    width: 100%;
+    
+}
+
+.title-role, .title-collab, .title-duration, .title-tools{
+    color:white;
+    opacity: 50%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.role, .collab, .duration, .tools, .column-detail-role>p{
+    color: white;
+    opacity: 80%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.column-detail-role>p{
+    height: 120px;
+}
+
+
+
+
+
+.foto-detail{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin-top:50px;
+    width: 100%;
+}
+.foto-detail > img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+.text-pict{
+    color:white;
+    opacity: 60%;
+    font-family: "Poppins", sans-serif;
+}
+.text-pict::selection{
+    color: yellow;
+}

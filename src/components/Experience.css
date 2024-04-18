@@ -1,0 +1,97 @@
+.experience-section{
+    background-color: #242424;
+    padding-bottom:30px;
+    padding-top:30px;
+}
+.experience-title{
+
+}
+.experience-title > marquee{
+    background-color: black;
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 80px;
+    /* margin-right: 10px;
+    margin-left:10px;
+    border-radius: 10px; */
+}
+.experience-grid{
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+.grid1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:20px
+}
+.grid2{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+
+/* COMPONENT CONTAINER CSS */
+.color-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:150px;
+    width: 100%;
+    border-radius: 10px;
+    padding:20px;
+    /* margin-right:5px;
+    margin-left:5px; */
+    background-color: #FF3E3E;
+}
+.company{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+}
+.name_company,.name_program{
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+.brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px
+}
+.brand > img{
+    width: 100px;
+    border-radius: 10px;
+}
+.nick{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .grid1,
+    .grid2 {
+      flex-direction: column;
+      align-items: center; /* Untuk membuat konten berada di tengah kolom */
+      margin-left:20px;
+      margin-right: 20px;
+    }
+  }
+
+  

@@ -1,0 +1,98 @@
+.section-proyek{
+    background-color: #242424;
+}
+.project-title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 80px;
+    margin-left:20px;
+    margin-top:50px;
+    color:white;
+}
+
+.container-proyek {
+    display: grid;
+    padding: 20px;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr); /* Mengatur baris menjadi menyesuaikan tinggi secara otomatis */
+    grid-gap: 10px;
+    grid-auto-flow: row dense; /* Memastikan item terisi dari kiri ke kanan tanpa celah kosong */
+}
+.proyek1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: red; */
+    gap:10px;
+    object-fit: cover;
+}
+
+.item {
+    overflow: hidden;
+    width: 100%;
+}
+.img-proyek{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 2px solid transparent;
+    user-select: none;
+}
+.img-proyek:hover {
+    border: 2px solid transparent;
+    animation: glow 3s infinite alternate;
+}
+
+
+@keyframes glow {
+    0% {
+        border-color: red;
+    }
+    33% {
+        border-color: green;
+    }
+    66% {
+        border-color: blue;
+    }
+    100% {
+        border-color: red;
+    }
+}
+
+.name-proyek{
+    color:white;
+    font-size: 8px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.name-proyek::selection{
+    user-select: none;
+}
+.about-proyek{
+    color:white;
+    font-size: 8px;
+    text-transform: uppercase;
+    opacity: 30%;
+    margin-bottom:5px;
+    overflow: hidden;
+}
+.about-proyek::selection{
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    .section-proyek{
+        height: 100%;
+    }
+    .container-proyek {
+      display: flex;
+      flex-direction: column;
+    }
+    .proyek1{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  

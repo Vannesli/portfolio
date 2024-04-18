@@ -1,0 +1,67 @@
+.project-section{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-bottom:50px;
+
+}
+
+.project-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.project1{
+    width: 98%;
+}
+.project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 100%;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.project-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+}
+.project-logo{
+    
+}
+.project-logo > img{
+    width: 20px;
+    
+}
+.horizontal-line {
+    width: 100%; /* Atur lebar garis horizontal */
+    border-top: 1px solid black; /* Atur warna, ketebalan, dan gaya sesuai kebutuhan */
+}
+
+.vertical-line {
+    border-left: 1px solid black; /* Atur warna, ketebalan, dan gaya sesuai kebutuhan */
+    height: 30px; /* Atur tinggi garis vertikal */
+}
+.project-name{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+.button-demo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px 80px 10px 80px;
+}
