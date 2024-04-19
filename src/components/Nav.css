@@ -40,6 +40,9 @@
     object-fit: cover;
 }
 .container-logo > img:hover{
+    cursor: pointer;
+}
+.container-logo > img:hover{
     border: 3px solid transparent;
     animation: glow 3s infinite alternate;
 }

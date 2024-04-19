@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: #111111;
 }
 .image-hero-detail{
     display: flex;
@@ -15,6 +16,9 @@
 }
 .image-hero-detail > img{
     width: 95%;
+}
+.image-hero-detail > img::selection{
+    
 }
 
 
@@ -38,6 +42,10 @@
     font-size: 30px;
     text-transform: capitalize;
 }
+.proyek-name::selection{
+    background-color: yellow;
+    color:black;
+}
 .proyek-about{
     /* background-color: red; */
     width: 100%;
@@ -47,6 +55,10 @@
     font-style: normal;
     font-size: 15px;
     text-transform: capitalize;
+}
+.proyek-about::selection{
+    background-color: yellow;
+    color:black;
 }
 
 
@@ -71,6 +83,7 @@
     width: 100%;
     /* background-color: blue; */
 }
+
 .row-detail-role{
     display: flex;
     flex-direction: row;
@@ -107,8 +120,14 @@
     height: 120px;
 }
 
-
-
+.title-role::selection, .title-collab::selection, .title-duration::selection, .title-tools::selection{
+    background-color: yellow;
+    color:black;
+}
+.role::selection, .collab::selection, .duration::selection, .tools::selection{
+    background-color: yellow;
+    color: black;
+}
 
 
 .foto-detail{
@@ -117,11 +136,12 @@
     gap:20px;
     margin-top:50px;
     width: 100%;
+    
 }
 .foto-detail > img{
     width: 100%;
     object-fit: cover;
-    
+    user-select: none;
 }
 .text-pict{
     color:white;
@@ -129,5 +149,7 @@
     font-family: "Poppins", sans-serif;
 }
 .text-pict::selection{
-    color: yellow;
+    background-color: yellow;
+    color: black;
 }
+

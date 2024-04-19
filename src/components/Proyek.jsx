@@ -42,7 +42,7 @@ function Proyek(){
                                     </Link>
                                     <div>
                                         <span className="name-proyek">{subItem.proyek_name}</span>
-                                        <p className="about-proyek">{subItem.proyek_about}</p>
+                                        <p className="about-proyek">{subItem.proyek_sub_name}</p>
                                     </div>
                                 </div>
                             ))}

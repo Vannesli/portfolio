@@ -10,33 +10,34 @@ function Hero() {
     const [clickCount, setClickCount] = useState(0);
     const [displays, setDisplays] = useState([false, false, false, false]);
 
-    const handleClick = () => {
-        if (clickCount < 4) {
-            const newDisplays = [...displays];
-            newDisplays[clickCount] = true;
-            setDisplays(newDisplays);
-            setClickCount(prevCount => prevCount + 1);
-        } else {
-            setDisplays([false, false, false, false]);
-            setClickCount(0);
-        }
-    };
+    // const handleClick = () => {
+    //     if (clickCount < 4) {
+    //         const newDisplays = [...displays];
+    //         newDisplays[clickCount] = true;
+    //         setDisplays(newDisplays);
+    //         setClickCount(prevCount => prevCount + 1);
+    //     } else {
+    //         setDisplays([false, false, false, false]);
+    //         setClickCount(0);
+    //     }
+    // };
 
     // Daftar URL gambar untuk setiap display
-    const imageUrls = [
-        logo2,
-        logo3,
-        logo4,
-        logo5,
-    ];
+    // const imageUrls = [
+    //     logo2,
+    //     logo3,
+    //     logo4,
+    //     logo5,
+    // ];
 
     // Daftar deskripsi untuk setiap display
-    const descriptions = [
-        "Hey! thankyou for coming",
-        "Im really enjoy",
-        "Deskripsi untuk Display 3",
-        "Deskripsi untuk Display 4",
-    ];
+    // const descriptions = [
+    //     "Hey! thankyou for coming",
+    //     "Im really enjoy",
+    //     "Deskripsi untuk Display 3",
+    //     "Deskripsi untuk Display 4",
+    // ];
+    // onClick={handleClick}
 
     return (
         <>
@@ -47,7 +48,7 @@ function Hero() {
                             <h1 className="text-cloud">Hey, im Vari<br/>Vannes' assistant</h1>
 
                             <div className='icon-vari'>
-                            <span className="name" onClick={handleClick}><img src={Vari}></img></span>
+                            <span className="name" ><img src={Vari}></img></span>
                             </div>
                             {displays.map((display, index) => (
                                 display && (

@@ -3,6 +3,7 @@ import axios from "axios"
 import { useParams } from "react-router-dom"
 import valorantinfo from "../assets/Valorantinfo Thumbnail.png"
 import item1 from "../assets/azuki.png"
+import Footer from "../components/Footer"
 import "../pages/Detail_proyek.css"
 function Detailproyek({}){
 
@@ -27,6 +28,16 @@ function Detailproyek({}){
             });
     }, [id]);
 
+    // const renderVideo = () => {
+    //     if (proyekDetail) {
+    //         if (id === '4') {
+    //             return <iframe width="560" height="315" src="https://www.youtube.com/watch?v=rPysfjP_NWg&pp=ygUNdmlkZW8gc2luZ2thdA%3D%3D" title="Video 1"></iframe>;
+    //         } else if (id === '7') {
+    //             return <iframe width="560" height="315" src="https://www.youtube.com/watch?v=rsFovUU_0FQ&pp=ygUNdmlkZW8gc2luZ2thdA%3D%3D" title="Video 2"></iframe>;
+    //         } 
+    //     }
+    // };
+
     return(
         <>
             
@@ -36,7 +47,6 @@ function Detailproyek({}){
                             <div className="image-hero-detail">
                                 <h2>{proyekDetail.proyek_name}</h2>
                                 <img src={proyekDetail.Thumbnail} alt={proyekDetail.proyek_name} />
-                                <p>{proyekDetail.proyek_about}</p>
                                 {/* Tampilkan detail lainnya sesuai kebutuhan */}
                             </div>
                         <div className="row-hero-detail">
@@ -53,11 +63,11 @@ function Detailproyek({}){
                         <div className="column-detail">
                             <div className="row-detail">
                                 <div className="column-detail-role">
-                                    <p>{proyekDetail.proyek_about}</p>
+                                    <p className="proyek-about">{proyekDetail.proyek_about}</p>
                                     <div className="row-detail-role">
                                         <div className="column-row-detail-role">
                                             <span className="title-role">Role</span>
-                                            <span className="role"> Product & Brand Designer</span>
+                                            <span className="role"> {proyekDetail.Role}</span>
                                         </div>
                                         <div className="column-row-detail-collab">
                                             <span className="title-collab">Collaborators</span>
@@ -69,7 +79,7 @@ function Detailproyek({}){
                                 </div>
 
                                 <div className="column-detail-role">
-                                    <p>{proyekDetail.proyek_about_2}</p>
+                                    <p className="proyek-about">{proyekDetail.proyek_about_2}</p>
                                     <div className="row-detail-role">
                                         <div className="column-row-detail-duration">
                                             <span className="title-duration">Duration</span>
@@ -89,6 +99,7 @@ function Detailproyek({}){
                             <div className="foto-detail">
                                 <img src={proyekDetail.pict1}></img>
                                 <p className="text-pict">{proyekDetail.textpict1}</p>
+                                {/* {renderVideo()} */}
                                 <img src={proyekDetail.pict2}></img>
                                 <img src={proyekDetail.pict3}></img>
                                 <img src={proyekDetail.pict4}></img>
@@ -104,7 +115,9 @@ function Detailproyek({}){
                     ) : (
                         console.log("filtering success")
                     )};
+                    <Footer />
     </>
+    
     )
 }
 export default Detailproyek

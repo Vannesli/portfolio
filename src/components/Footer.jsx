@@ -5,22 +5,22 @@ function footer(){
             <div className="section-footer">
                 <div className="left-footer">
                     <div className="version">
-                        v1.0.0
+                        v1.2.0
                     </div>
                     <span className="last-update">
-                        last updated 2024-04-16
+                        last updated 2024-04-19
                     </span>
                 </div>
 
                 <div className="mid-footer">
-                    <span className="sosial-media">LinkedIn<sup>1</sup></span>
-                    <span className="sosial-media">Instagram<sup>2</sup></span>
-                    <span className="sosial-media">Facebook<sup>3</sup></span>
+                    <a class="sosial-media" href="https://www.linkedin.com/in/vannesvannes" target="_blank">LinkedIn<sup>1</sup></a>
+                    <a class="sosial-media" href="https://www.instagram.com/vannes_li/" target="_blank">Instagram<sup>2</sup></a>
+                    <a class="sosial-media" href="https://wa.me/+6282215282696" target="_blank">Whatsapp<sup>3</sup></a>
                 </div>
 
                 <div className="right-footer">
                     <span className="farewell">Let's build something together.</span>
-                    <span className="farewell">Nezli2808@gmail.com<sup>4</sup></span>
+                    <a class="sosial-media" href="" target="_blank">Nezli2808Gmail.com<sup>4</sup></a>
                 </div>
             </div>
             <div className="copyright">

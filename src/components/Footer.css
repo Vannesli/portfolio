@@ -1,11 +1,12 @@
 .section-footer{
-    background-color: black;
+    background-color: #1C1C1C;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
     padding-top:30px;
     padding-bottom:50px;
+    border-top: 1px solid #52525B;
 }
 sup{
     color:yellow;
@@ -36,6 +37,7 @@ sup{
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     color:#52525B;
+    padding-top:2px;
 }
 .last-update::selection{
     color: yellow;
@@ -54,6 +56,10 @@ sup{
     text-align: left;
     color:white;
     opacity: 80%;
+    text-decoration: none;
+}
+.sosial-media:hover{
+    text-decoration: underline;
 }
 .sosial-media::selection{
     color: yellow;
@@ -78,12 +84,13 @@ sup{
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#52525B;
+    background-color: #1C1C1C;
 }
 .copyright-text{
     margin-left:30px;
     width: fit-content;
-    color:#52525B;
+    color:WHITE;
+    opacity: 50%;
     font-family: "Poppins", sans-serif;
     text-transform: capitalize;
 }
