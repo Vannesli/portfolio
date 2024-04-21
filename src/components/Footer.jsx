@@ -6,7 +6,7 @@ function footer(){
                 <div className="left-footer">
                     <div className="container-left-footer">
                     <div className="version">
-                        v1.4.0
+                        v1.4.2
                     </div>
                     <span className="last-update">
                         last updated 2024-04-22
