@@ -45,20 +45,18 @@ function Detailproyek({}){
                     {proyekDetail ? (
                         <div className="hero-detail">
                             <div className="image-hero-detail">
-                                <h2>{proyekDetail.proyek_name}</h2>
                                 <img src={proyekDetail.Thumbnail} alt={proyekDetail.proyek_name} />
-                                {/* Tampilkan detail lainnya sesuai kebutuhan */}
                             </div>
                         <div className="row-hero-detail">
                             <div className="name-detail">
-                            <span className="proyek-name">
-                                {proyekDetail.proyek_name}
-                            
-                            </span>
-                            <p className="proyek-about">
-                                {proyekDetail.proyek_sub_name}
-                            </p>
-                        </div>
+                                <span className="proyek-name">
+                                    {proyekDetail.proyek_name}
+                                
+                                </span>
+                                <p className="proyek-about">
+                                    {proyekDetail.proyek_sub_name}
+                                </p>
+                            </div>
 
                         <div className="column-detail">
                             <div className="row-detail">
