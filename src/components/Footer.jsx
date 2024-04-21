@@ -4,12 +4,14 @@ function footer(){
         <>
             <div className="section-footer">
                 <div className="left-footer">
+                    <div className="container-left-footer">
                     <div className="version">
-                        v1.2.0
+                        v1.4.0
                     </div>
                     <span className="last-update">
-                        last updated 2024-04-19
+                        last updated 2024-04-22
                     </span>
+                    </div>
                 </div>
 
                 <div className="mid-footer">
@@ -19,8 +21,10 @@ function footer(){
                 </div>
 
                 <div className="right-footer">
+                    <div className="container-right-footer">
                     <span className="farewell">Let's build something together.</span>
                     <a class="sosial-media" href="" target="_blank">Nezli2808Gmail.com<sup>4</sup></a>
+                    </div>
                 </div>
             </div>
             <div className="copyright">

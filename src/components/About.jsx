@@ -12,8 +12,8 @@ function about(){
                 <div className="about-detail">
                     <div className="detail-teks">
                         <p className="teks-detail">
-                        I am a web or product designer and programmer who has an interest in work and technology. 
-                        I use Figma as the main platform in UI/UX Design and React.js for developing. 
+                        I create design with the best user experience and develop them based on website. 
+                        I use Figma as the main platform in UI/UX Design and React.js for development. 
                         Currently living in Bandung, I am ready to face any design challenge
                         </p>
                     </div>

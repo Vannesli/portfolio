@@ -1,5 +1,5 @@
 .about-section{
-    background-color: black;
+    background-color: #111111;
     color:white;
     width: 100%;
     display: flex;
@@ -129,7 +129,7 @@
   color:black;
 }
 /* Tablet */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1270px) {
     .about-section {
       flex-direction: column;
       align-items: left;
@@ -170,9 +170,12 @@
   }
   
   /* Mobile */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 468px) {
     .about-name > span {
       font-size: 60px;
+    }
+    .detail-teks{
+      width: 80%;
     }
     .teks-detail {
       font-size: 20px;
