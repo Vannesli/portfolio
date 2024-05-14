@@ -7,10 +7,13 @@ import item4 from "../assets/Valorantinfo Thumbnail.png"
 import item5 from "../assets/KPU.png"
 import item6 from "../assets/vali.png"
 import item7 from "../assets/Thumbnail GymNez.png"
-import React from "react"
 import axios from "axios";
-import { useState, useEffect } from "react";
+import React, { useEffect, useRef, useState } from 'react';
 import Detailproyek from "../pages/Detail_proyek";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
 function Proyek(){
     const [selectedImage, setSelectedImage] = useState(null);
 
@@ -25,9 +28,27 @@ function Proyek(){
         .then(result => setProyek(result.data))
         .catch(error => console.error('Error fetching data:', error));
     }, [])
+
+    const containerProyekRef = useRef(null);
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger); // Daftarkan ScrollTrigger
+
+        const containerProyekElement = containerProyekRef.current;
+
+        gsap.from(containerProyekElement, {
+            opacity: 0,
+            y: 100,
+            duration: 2.5,
+            scrollTrigger: {
+                trigger: containerProyekElement,
+                start: "top 80%", // Atur titik awal animasi saat container-proyek memasuki viewport 80% dari atas
+                toggleActions: "play none none none" // Atur aksi animasi saat masuk ke viewport
+            }
+        });
+    }, []);
     return(
         <>
-            <div className="section-proyek">
+            <div className="section-proyek" ref={containerProyekRef}>
                 {/* <span className="project-title">
                     Projects
                 </span> */}
